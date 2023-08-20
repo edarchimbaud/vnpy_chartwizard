@@ -11,23 +11,23 @@
     <img src ="https://img.shields.io/github/license/vnpy/vnpy.svg?color=orange"/>
 </p>
 
-## 说明
+## Description
 
-ChartWizard是用于实时K线图表展示的功能模块，用户可以通过其UI界面查看实时和历史K线行情，目前只支持显示1分钟级别的K线数据，实时K线（最新的一根K线）为Tick级刷新。
+ChartWizard is a function module for real-time K-line charting, users can view real-time and historical K-line quotes through its UI interface, currently it only supports displaying 1-minute K-line data, and the real-time K-line (the latest K-line) is Tick-level refreshing.
 
-## 安装
+## Installation
 
-安装环境推荐基于3.3.0版本以上的【[**VeighNa Studio**](https://www.vnpy.com)】。
+The recommended installation environment is based on version 3.3.0 or above of [[**VeighNa Studio**](https://www.vnpy.com)].
 
-直接使用pip命令：
+Use pip command directly:
 
-```
+```bash
 pip install vnpy_chartwizard
 ```
 
 
-或者下载源代码后，解压后在cmd中运行：
+Or download the source code, unzip it and run it in cmd:
 
-```
+```bash
 pip install .
 ```

@@ -39,16 +39,16 @@ class ChartWizardWidget(QtWidgets.QWidget):
 
     def init_ui(self) -> None:
         """"""
-        self.setWindowTitle("K线图表")
+        self.setWindowTitle("K-Line Chart")
 
         self.tab: QtWidgets.QTabWidget = QtWidgets.QTabWidget()
         self.symbol_line: QtWidgets.QLineEdit = QtWidgets.QLineEdit()
 
-        self.button: QtWidgets.QPushButton = QtWidgets.QPushButton("新建图表")
+        self.button: QtWidgets.QPushButton = QtWidgets.QPushButton("New chart")
         self.button.clicked.connect(self.new_chart)
 
         hbox: QtWidgets.QHBoxLayout = QtWidgets.QHBoxLayout()
-        hbox.addWidget(QtWidgets.QLabel("本地代码"))
+        hbox.addWidget(QtWidgets.QLabel("VT symbol"))
         hbox.addWidget(self.symbol_line)
         hbox.addWidget(self.button)
         hbox.addStretch()
@@ -100,12 +100,7 @@ class ChartWizardWidget(QtWidgets.QWidget):
         end: datetime = datetime.now(ZoneInfo(get_localzone_name()))
         start: datetime = end - timedelta(days=5)
 
-        self.chart_engine.query_history(
-            vt_symbol,
-            Interval.MINUTE,
-            start,
-            end
-        )
+        self.chart_engine.query_history(vt_symbol, Interval.MINUTE, start, end)
 
     def register_event(self) -> None:
         """"""
@@ -143,10 +138,7 @@ class ChartWizardWidget(QtWidgets.QWidget):
         # Subscribe following data update
         contract: Optional[ContractData] = self.main_engine.get_contract(bar.vt_symbol)
         if contract:
-            req: SubscribeRequest = SubscribeRequest(
-                contract.symbol,
-                contract.exchange
-            )
+            req: SubscribeRequest = SubscribeRequest(contract.symbol, contract.exchange)
             self.main_engine.subscribe(req, contract.gateway_name)
 
     def process_spread_event(self, event: Event) -> None:

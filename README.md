@@ -17,7 +17,7 @@ ChartWizard is a function module for real-time K-line charting, users can view r
 
 ## Installation
 
-The recommended installation environment is based on version 3.3.0 or above of [[**VeighNa Studio**](https://www.vnpy.com)].
+The recommended installation environment is based on version 3.3.0 or above of [[**VeighNa Studio**](https://edarchimbaud.com/veighna-website)].
 
 Use pip command directly:
 

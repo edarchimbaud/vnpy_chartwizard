@@ -39,7 +39,7 @@ class ChartWizardWidget(QtWidgets.QWidget):
 
     def init_ui(self) -> None:
         """"""
-        self.setWindowTitle("K-Line Chart")
+        self.setWindowTitle("Bar Chart")
 
         self.tab: QtWidgets.QTabWidget = QtWidgets.QTabWidget()
         self.symbol_line: QtWidgets.QLineEdit = QtWidgets.QLineEdit()

@@ -13,7 +13,7 @@
 
 ## Description
 
-ChartWizard is a function module for real-time K-line charting, users can view real-time and historical K-line quotes through its UI interface, currently it only supports displaying 1-minute K-line data, and the real-time K-line (the latest K-line) is Tick-level refreshing.
+ChartWizard is a function module for real-time bar charting, users can view real-time and historical bar quotes through its UI interface, currently it only supports displaying 1-minute bar data, and the real-time bar (the latest bar) is Tick-level refreshing.
 
 ## Installation
 

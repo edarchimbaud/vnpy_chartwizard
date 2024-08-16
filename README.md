@@ -17,7 +17,7 @@ ChartWizard is a function module for real-time bar charting, users can view real
 
 ## Installation
 
-The recommended installation environment is based on version 3.3.0 or above of [[**VeighNa Studio**](https://edarchimbaud.com/veighna-website)].
+The recommended installation environment is based on version 3.3.0 or above of [[**VeighNa Studio**](https://github.com/paperswithbacktest/vnpy)].
 
 Use pip command directly:
 
